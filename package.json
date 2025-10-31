@@ -3,16 +3,15 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
-  "resolutions": {
-    "@mastra/libsql": "npm:empty-module@^1.0.0"
-  },
-  "mastra": {
-    "external": ["@mastra/libsql"]
-  },
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js"
+  },
+  "mastra": {
+    "external": [
+      "@mastra/libsql"
+    ]
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
