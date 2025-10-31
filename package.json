@@ -8,6 +8,9 @@
     "build": "tsc",
     "start": "node dist/server.js"
   },
+    "mastra": {
+    "external": ["@mastra/libsql"]
+  },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.5",
